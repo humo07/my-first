@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Hub Center</title>
+    <style>
+        body{
+            background-image: url("body.avif");
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("body.avif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: white;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .search-bar {
+            flex: 1;
+            margin: 0 2rem;
+        }
+
+        .search-bar input {
+            padding: 0.5rem;
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        nav a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 400px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('office-background.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 4rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: white;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .service-card h3 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .enter-btn {
+            background: #4CAF50;
+            color: white;
+            padding: 0.5rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: #f5f5f5;
+        }
+
+        .pricing h2 {
+            margin-bottom: 2rem;
+        }
+
+        .pricing-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .price-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            min-width: 200px;
+        }
+
+        .weekly {
+            background: #E8F5E9;
+        }
+
+        .monthly {
+            background: #FCE4EC;
+        }
+
+        .day {
+            background: #E8F5E9;
+        }
+
+        .subscribe-btn {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem 3rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #00BFA5;
+            color: white;
+            padding: 3rem 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-cards {
+                flex-direction: column;
+            }
+
+            footer {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Work Hub Center">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search by place...">
+        </div>
+        <nav>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#locations">LOCATIONS</a>
+            <a href="#menu">☰</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to our website.</h1>
+        <p>We will provide you with high-quality service and help you find a Work Hub center in the place you need.</p>
+    </section>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>HOT-DESK</h3>
+            <button class="enter-btn">
+                <a href="index2.html" target="_blank" style="text-decoration: none; color: white;">ENTER</a>
+            </button>
+        </div>
+        <div class="service-card">
+            <h3>MEETING</h3>
+            <button class="enter-btn">
+                <a href="index2.html" target="_blank" style="text-decoration: none; color: white;">ENTER</a>
+            </button>
+        </div>
+        <div class="service-card">
+            <h3>ROOMS</h3>
+            <button class="enter-btn">
+                <a href="index2.html" target="_blank" style="text-decoration: none; color: white;">ENTER</a>
+            </button>
+        </div>
+        <div class="service-card">
+            <h3>PLACES</h3>
+            <button class="enter-btn">
+                <a href="index2.html" target="_blank" style="text-decoration: none; color: white;">ENTER</a>
+            </button>
+        </div>
+    </div>
+    
+
+    <div class="gallery">
+        <img src="Hot-desk image.jpg" alt="workpace">
+        <img src="Meeting room image.jpg" alt="Meeting Room">
+        <img src="Rooms image.jpg" alt="Common Area">
+    </div>
+
+    <section class="pricing">
+        <h2>We have great news</h2>
+        <p>we are offering you monthly and weekly subscriptions</p>
+        <div class="pricing-cards">
+            <div class="price-card weekly">
+                <h3>WEEKLY</h3>
+                <p>150$</p>
+            </div>
+            <div class="price-card monthly">
+                <h3>MONTHLY</h3>
+                <p>500$</p>
+            </div>
+            <div class="price-card day">
+                <h3>DAY</h3>
+                <p>20$</p>
+            </div>
+        </div>
+        <button class="subscribe-btn">SUBSCRIBE</button>
+    </section>
+
+    <footer>
+        <div class="footer-section">
+            <h3>ADDRESS</h3>
+            <p>M24, Musaffah, Abu Dhabi, UAE</p>
+        </div>
+        <div class="footer-section">
+            <h3>CONTACT UC</h3>
+            <p>+989999662323</p>
+            <p>EMAIL</p>
+            <p>@example.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>FOLLOW US</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/the.humo.o7?igsh=aWptZG4ybmU3c2lj"><img src="Instagram_logo_2022.svg.webp" alt="Instagram"></a>
+                <a href="https://www.facebook.com/gaybullo.gaybullo.54?mibextid=ZbWKwL"><img src="fasebook.png" alt="facebook"></a>
+            </div>
